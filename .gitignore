@@ -1,0 +1,18 @@
+# Claude Code
+.claude/
+
+# Design files
+design/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor directories
+.vscode/
+.idea/
+
+# Node (if ever used)
+node_modules/
+npm-debug.log*

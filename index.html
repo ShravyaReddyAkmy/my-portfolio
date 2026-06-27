@@ -1,247 +1,259 @@
-<!DOCTYPE HTML>
-<!--
-	Shravya Reddy Akmy
-	Portfolio
--->
-<html>
-	<head>
-		<title>Shravya's Portfolio</title>
-		<link
-			rel = "icon"
-			type = "image/jpeg"
-			href = "shravya-favicon.jpeg"/>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shravya Reddy Akmy — Senior Software Engineer building AI infrastructure, RAG pipelines, and agentic systems.">
+  <title>Shravya Reddy Akmy</title>
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+  <link rel="icon" type="image/jpeg" href="shravya-favicon.jpeg">
+  <link rel="apple-touch-icon" href="shravya-favicon.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">About Me</a></li>
-							<li><a href="#two">My Work</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">SR</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume">Resume ↗</a>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-icon">☀</span>
+    </button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Software Engineer</p>
+      <h1 class="hero-name">Shravya Reddy Akmy</h1>
+      <p class="hero-line">Building AI systems that ship — agents, RAG, and the infra that makes them reliable.</p>
+    </div>
+  </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Shravya Reddy Akmy</h1>
-							<p>Software Engineer | Data Engineer | Python Developer | AI/ML Enthusiast</p> 
-							<!-- <a href="http://html5up.net/license">Creative Commons</a> -->
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-label">Experience</h2>
+      <div class="exp-list">
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="shravya-reddy-akmy.jpeg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Hi You!</h2>
-									<p>I'm Shravya, a seasoned Software Engineer with 4 years of experience in building Python based
-										applications, managing databases and implementing analytics solutions. 
-										<br><br>
-										I'm a data and AI/ML enthusiast with eagerness to learn and try out new technologies and tools.
-									
-									</p>
-									<!-- <ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul> -->
-								</div>
-							</div>
-						</section>
-						<!-- <section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section> -->
-						<section>
-							<!-- <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a> -->
-							<div class="content">
-								<div class="inner">
-									<h2>Skills</h2>
-									<div class="features">
-										<section>
-											<h3>Programming Languages</h3>
-											<p>Python, JavaScript, Shell scripting,<br>
-												SQL, C++, MATLAB</p>
-										</section>
-										<section>
-											<h3>Web Frameworks</h3>
-											<br>
-											<p>HTML<br>CSS<br>Django</p>
-										</section>
-										<section>
-											<h3>AI/ML Tools & Libraries</h3>
-											<p>Jupyter Notebook<br>Colab<br>TensorFlow<br>Pandas</p>
-										</section>	
-										<section>
-											<h3>Databases & Cloud</h3>
-											<p>MySQL<br>MongoDB<br>GCP<br>Azure</p>
-										</section>
-									</div>
-									<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p> -->
-									<!-- <ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul> -->
-								</div>
-							</div>
-						</section>
-					</section>
+        <div class="exp-row">
+          <span class="exp-entry"><span class="exp-company">Citizens Bank</span>, <span class="exp-role">Senior Software Engineer</span></span>
+          <span class="exp-date">2025 – Present</span>
+        </div>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Experience</h2>
-							<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p> -->
-							<div class="features">
-								<section>
-									<!-- <span class="icon solid major fa-code"></span> -->
-									<center>
-									<h2>Wipro</h2>
-									<p>Data Engineer</p>
-									</center>
-									<p>
-										Technology : PySpark, Kafka, Talend, AWS<br>
-										Duration : January, 2023 - Present
-									</p>
-								</section>
-								<section
-									<center>
-									<h2>Juniper Networks</h2>
-									<p>Network Engineer</p>
-									</center>
-									<p>
-										Technology : Python, Automation, Shell<br>
-										Duration : August, 2018 - July, 2021
-									</p>
-								</section>
-								<!-- <section>
-									 <span class="icon solid major fa-link"></span> 
-									<center>
-										<h2>Juniper Networks</h2>
-										<p>Network Engineer</p>
-										</center>
-										<p>
-											Technology : Python, Automation, Shell<br>
-											Duration : August, 2018 - July, 2021
-										</p>
-								</section>  -->
-								<!-- <section>
-									 <span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>  -->
-							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
-						</div>
-					</section>
+        <div class="exp-row">
+          <span class="exp-entry"><span class="exp-company">Headstarter</span>, <span class="exp-role">Software Engineer</span></span>
+          <span class="exp-date">2024</span>
+        </div>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contact</h2>
-							<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p> -->
-							<div class="split style1">
-								<!-- <section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form> 
-								</section> -->
-								<section>
-									<ul class="contact">
-									<center>
-										<!-- <li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li> -->
-										<li>
-											<h3>Email</h3>
-											<a href="#">akmyshravyareddy@gmail.com</a>
-										</li>
-										<br>
-										<!-- <li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li> -->
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://x.com/11_shravz" class="icon brands fa-x-twitter"><span class="label">X</span></a></li>
-												<li><a href="https://www.facebook.com/shravya.akmy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="https://github.com/ShravyaReddyAkmy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.instagram.com/shravz_11/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/shravyareddyakmy/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</center>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+        <div class="exp-row">
+          <span class="exp-entry"><span class="exp-company">Intellisavvy</span>, <span class="exp-role">Full-Stack Developer</span></span>
+          <span class="exp-date">2023 – 2024</span>
+        </div>
 
-			</div>
+        <div class="exp-row">
+          <span class="exp-entry"><span class="exp-company">Juniper Networks</span>, <span class="exp-role">Python Developer</span></span>
+          <span class="exp-date">2018 – 2021</span>
+        </div>
 
-		<!-- Footer -->
-			<!-- <footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer> -->
+      </div>
+    </div>
+  </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-label">Skills</h2>
+      <div class="skill-tile skill-tile-pipeline" id="tile-pipeline">
+        <div class="pl-grid">
 
-	</body>
+          <div class="pl-step" id="pl-query">
+            <div class="pl-step-head">
+              <span class="pl-num">01</span>
+              <span class="pl-step-label">query</span>
+            </div>
+            <div class="pl-body">
+              <div class="pl-code" id="pl-code">
+                <div class="pl-code-line"><span class="kw">async def</span> <span class="fn">get_skills</span><span class="op">(</span><span class="va">q</span><span class="op">):</span></div>
+                <div class="pl-code-line"><span class="op">  </span><span class="kw">return await</span> <span class="fn">graph</span></div>
+                <div class="pl-code-line"><span class="op">    </span><span class="fn">.ainvoke</span><span class="op">({</span></div>
+                <div class="pl-code-line"><span class="op">      </span><span class="str">"query"</span><span class="op">: </span><span class="va" id="pl-query-val">"…"</span></div>
+                <div class="pl-code-line"><span class="op">    })</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pl-arrow">→</div>
+
+          <div class="pl-step" id="pl-embed">
+            <div class="pl-step-head">
+              <span class="pl-num">02</span>
+              <span class="pl-step-label">embed</span>
+            </div>
+            <div class="pl-body">
+              <div class="pl-vector" id="pl-vector"></div>
+              <span class="pl-meta">vector · 1536d</span>
+            </div>
+          </div>
+
+          <div class="pl-arrow">→</div>
+
+          <div class="pl-step" id="pl-retrieve">
+            <div class="pl-step-head">
+              <span class="pl-num">03</span>
+              <span class="pl-step-label">retrieve</span>
+            </div>
+            <div class="pl-body pl-docs" id="pl-docs"></div>
+          </div>
+
+          <div class="pl-arrow">→</div>
+
+          <div class="pl-step" id="pl-generate">
+            <div class="pl-step-head">
+              <span class="pl-num">04</span>
+              <span class="pl-step-label">generate</span>
+            </div>
+            <div class="pl-body pl-tags" id="pl-tags"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skill-tags-row">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">LangChain</span>
+        <span class="skill-tag">LangGraph</span>
+        <span class="skill-tag">MCP</span>
+        <span class="skill-tag">RAG</span>
+        <span class="skill-tag">Agents</span>
+        <span class="skill-tag">Embeddings</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">AWS Lambda</span>
+        <span class="skill-tag">Pinecone</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">Orchestration Pipelines</span>
+        <span class="skill-tag">Testing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-label">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Real-Time Video Intelligence</h3>
+            <span class="project-badge active-badge">Active</span>
+          </div>
+          <p class="project-desc">Face detection pipeline evaluating YOLO and RetinaNet for accuracy, latency, and GPU efficiency — feeding downstream tracking and VLM-based dense captioning.</p>
+          <p class="project-mono">VLM: NVIDIA Cosmos-Reason2-8B</p>
+          <div class="tech-tags">
+            <span class="tag">Python</span><span class="tag">YOLO</span><span class="tag">RetinaNet</span><span class="tag">VLM</span><span class="tag">NVIDIA Cosmos</span>
+          </div>
+          <div class="project-visual">
+            <div class="camera-frame">
+              <div class="bbox-anim">
+                <div class="bbox"></div>
+                <span class="bbox-label">person · 0.97</span>
+              </div>
+              <div class="bbox-anim bbox-anim-2">
+                <div class="bbox"></div>
+                <span class="bbox-label">laptop · 0.89</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Object Detection for XR</h3>
+            <span class="project-badge ms-badge">M.S. Capstone</span>
+          </div>
+          <p class="project-desc">Fine-tuned TF SSD MobileNetV2 FPN-Lite using transfer learning and custom TFRecord pipelines for visual and mixed reality applications.</p>
+          <p class="project-mono">20k training steps · transfer learning</p>
+          <div class="tech-tags">
+            <span class="tag">TensorFlow</span><span class="tag">Transfer Learning</span><span class="tag">TFRecord</span><span class="tag">MobileNetV2</span>
+          </div>
+          <div class="project-visual">
+            <div class="metrics-visual">
+              <div class="metric-row">
+                <span class="metric-label">mAP@0.5 IoU</span>
+                <div class="metric-track"><div class="metric-fill" style="--w:88%"></div></div>
+                <span class="metric-val">0.88</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Avg Recall</span>
+                <div class="metric-track"><div class="metric-fill" style="--w:72%"></div></div>
+                <span class="metric-val">0.72</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <h2 class="contact-heading">Let's build something.</h2>
+        <a href="mailto:akmyshravyareddy@gmail.com" class="contact-email">akmyshravyareddy@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-text">Shravya Reddy Akmy</span>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/shravyareddyakmy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-icon-link">
+          <!-- LinkedIn SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/ShravyaReddyAkmy" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-icon-link">
+          <!-- GitHub SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
+        <a href="https://github.com/ShravyaReddyAkmy/my-portfolio/Shravya_Resume.pdf" target="_blank" rel="noopener noreferrer" class="footer-resume">Resume ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/skills.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
